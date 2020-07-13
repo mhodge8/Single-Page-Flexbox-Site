@@ -1,16 +1,34 @@
 /*global*/
 body{
   font-size: 18px;
+  margin: 0;
+  background-color: #0d0d0d;
+  color: #bfbfbf;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.sub-heading{
+  font-size: 3rem;
+  color: #d9d9d9;
+}
+
 /*header*/
-.header-container{
-  
+header{
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg) ;
+  background-size: 1280px 720px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+nav{
   display: flex;
   align-items: center;
-  color: #f2f2f2;
   flex-wrap: wrap;
-  background: #000000;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 5%; 
 }
 
 header ul li{
@@ -21,83 +39,69 @@ header ul li{
 
 header a{
   text-decoration: none;
-  color: #f2f2f2;
+  color: #bfbfbf;
 }
 
-#logo{
-  font-size: 35px;
+header a:hover{
+  color: #d9d9d9;
 }
 
-/*showcase*/
-.showcase img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-height: 1080px;
-  max-width: 1920px;
-  background-blend-mode: multiply;
-}
 
 /*about*/
 .about{
   display: flex;
-  background: #f2f2f2;
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 30px 0px;
+  padding: 5% 7%;
+  line-height: 1.5;
 }
 
-.about h2{
-  font-size: 50px;
+.about h2, .about p{
   flex: 1;
-  margin-left: 5%;
 }
 
-.about p{
-  flex: 1;
-  margin-right: 5%;
-}
 
 /*pricing*/
 .pricing-container{
+  text-align: center;
+  padding: 5% 7%;
+}
+
+.pricing-container h2{
+  margin: 0 0 20px;
+}
+
+.tile-container{
   display: flex;
   justify-content: space-around;
-  background: #f2f2f2;
   flex-wrap: wrap;
-  margin: 0px;
-  padding-bottom: 18px;
+}
+
+.tile{
+  width: 350px;
 }
 
 .tile ul{
-  padding-left: 100px;
   list-style: none;
   margin: 0;
   padding: 0;
   flex: 1;
+  border: solid 2px #bfbfbf;
 }
 
 .tile li{
-  margin: 5px 0px;
-  padding: 2px 50px;
-  border-bottom: #000000 solid 2px;
+  margin: 10px 0px;
 }
 
 .tile h3{
   text-align: center;
-  background: #000000;
-  color: #ffffff;
   padding: 6px 0px;
   font-size: 20px;
+  margin: 0;
 }
 
 /*Social*/
-.contact{
-  background: #f2f2f2;
-  border-top: solid #d9d9d9 4px;
-}
-
 .contact h3{
   margin: 0px;
   text-align: center;
@@ -107,23 +111,42 @@ header a{
 
 .contact-flex{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 15px 0px;
   flex-wrap: wrap;
 }
 
 .contact-flex img{
-  width: 100px;
-  height: 100px;
+  width: 5rem;
+  height: 5rem;
+}
+.contact a{
+  margin: 2%;
 }
 
 /*Footer*/
 .footer{
-  background: #d9d9d9;
   padding: 20px 10px 10px 0px;
 }
 
 .footer p{
-  margin: 0px;
   text-align: right;
+}
+
+
+/*background images*/
+.image{
+  background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ), url(/img/acoustic-amplifier-artist-audio-114820.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.image1{
+  background: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2) ), url(/img/grayscale-photo-of-people-raising-their-hands-1666816.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
