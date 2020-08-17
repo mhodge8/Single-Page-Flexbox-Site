@@ -5,7 +5,7 @@ A static, single page website
 The purpose of this project was to get a better understanding of Flexboxes and web design. 
 
 # Screenshots
-![Imgur](https://i.imgur.com/AP8oYPG.png)
+![website-screenshot](https://i.imgur.com/AP8oYPG.png)
 
 # Roadmap
 No plans to further update this project.
